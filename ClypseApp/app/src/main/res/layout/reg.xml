@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/sname"
+        android:id="@+id/sName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="114dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/fname"
+        android:id="@+id/fName"
+        android:layout_below="@+id/sName"
+        android:layout_alignStart="@+id/sName"
+        android:layout_marginTop="44dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/mname"
+        android:id="@+id/mName"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/fName"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Surname"
+        android:ems="10"
+        android:id="@+id/editSurname"
+        android:layout_alignBottom="@+id/sName"
+        android:layout_toEndOf="@+id/mName"
+        android:layout_marginStart="66dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        android:ems="10"
+        android:id="@+id/editFirstName"
+        android:layout_alignBottom="@+id/fName"
+        android:layout_alignStart="@+id/editSurname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Middle Name"
+        android:ems="10"
+        android:id="@+id/editMiddleName"
+        android:layout_alignBottom="@+id/mName"
+        android:layout_alignStart="@+id/editFirstName" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/editMiddleName"
+        android:layout_alignStart="@+id/mName"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Я принимаю ......."
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_toEndOf="@+id/sName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регестрация"
+        android:id="@+id/buttonReg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editMiddleName"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="63dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:id="@+id/buttonCancel"
+        android:layout_alignBottom="@+id/buttonReg"
+        android:layout_alignStart="@+id/checkBox" />
+
+</RelativeLayout>

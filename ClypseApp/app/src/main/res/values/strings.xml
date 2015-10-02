@@ -4,4 +4,7 @@
     <string name="hello_world">Salam Kaban!</string>
     <string name="action_settings">Settings</string>
     <string name="search_title">Search</string>
+    <string name="sname">Фамилия</string>
+    <string name="fname">Имя</string>
+    <string name="mname">Отчество</string>
 </resources>
